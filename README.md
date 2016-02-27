@@ -1,9 +1,9 @@
-### Fluentd docker image
+### Fluentd docker image for Raspberry Pi
 
-This container image is to create endpoint to collect logs on your host.
+This container image is to create endpoint to collect logs on your host is based on oficial fluent image and resin Ruby
 
 ```
-docker run -d -p 24224:24224 -v /data:/fluentd/log fluent/fluentd
+docker run -d -p 24224:24224 -v /data:/fluentd/log wsrak/rpi-fluentd
 ```
 
 Default configurations are to:
